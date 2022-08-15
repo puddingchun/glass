@@ -1,0 +1,426 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+/*Roboto regular400 medium500;notodsans regular400 bold700*/
+
+body{
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.8;
+}
+.container{
+    width:1320px;
+    margin: 0 auto;
+    padding:0px 12px;
+}
+.bg-red{
+    background-color:#AA0601;
+    color:#fff;
+}
+.header .container{
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    width: 80px;
+    height: 48px;    
+}
+.header ul{
+    display: flex;
+}
+.header ul li a{
+    font-size: 20px;
+    color:#fff;
+    margin-left: 64px;
+}
+.menu ul{
+    line-height: 96px;
+    display: flex;
+    text-align: center;
+}
+.menu ul li{
+    width: 33.33%;
+    border: 1px solid #DCDCDC;  
+}
+.menu ul li a{
+    color:#000;
+}
+.menu li.item-active{
+    border-bottom: 8px solid #AA0601;
+}
+.banner ul{
+    display: flex;
+}
+.banner li{
+    width: 50%;
+    height: 296px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat:no-repeat;  
+}
+.custom-image1{
+    background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true.png);
+}
+.custom-image2{
+    background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true.png);
+}
+.footer{
+    padding:60px 0px 32px;
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    font-size: 16px;
+}
+.footer-menu ul{
+    display: flex;
+    margin-bottom: 24px;
+}
+.footer-menu ul.left li{
+    margin-right: 48px;
+}
+.footer-menu ul.right li{
+    margin-left: 32px;
+}
+.footer-menu a{
+    color:#fff
+}
+.footer-menu img{
+    width:48px;
+    height: 48px;
+}
+.footer-info{
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;    
+}
+.footer-info li{
+    width: 100%;
+    align-items: center;
+}
+.footer-info li a{
+    font-family: 'Noto Sans TC';
+    margin-left: 20px;
+    color: #fff;
+    font-size: 36px;
+}
+.footer-info .material-symbols-outlined{
+    font-size: 36px;
+}
+.footer-words{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding-top: 32px;
+}
+.footer-words p{
+    font-size: 16px;
+}
+.footer-words ul{
+    display: flex;
+}
+.footer-words a{
+    color:#fff;
+    font-size: 14px;
+    margin-left: 48px;
+}
+
+
+.sunglasses{
+    padding: 80px 0px;
+    text-align: center;
+}
+.sunglasses h4{
+    margin-bottom: 32px;
+}
+.glassitem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:24px;
+}
+.glassitem li{
+    width: 32%;
+    margin-bottom: 80px;
+}
+.glassitem li p{
+    display: flex;
+    justify-content: space-between;
+}
+.sunglasses span.price{
+    color:#AA0601;
+    font-weight: 500;
+}
+.sunglasses .colors{
+    text-align: left;
+}
+.sunglasses .colors::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #5F3E2D;
+    border-radius: 4px;
+}
+.sunglasses .colors::after{
+    content: '';
+    position: relative;
+    left:8px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #AA0601;
+    border-radius: 4px;
+}
+.sunglasses .page{
+    display: flex;
+    justify-content: center;
+}
+.sunglasses .page li{
+    border: 1px solid #000;
+    line-height: 48px;
+}
+.sunglasses .page a{
+    padding: 14px;
+    color:#555;
+}
+.number-button a{
+    font-size: 18px;
+    border: 1px solid transparent;
+}
+.updown-button a{
+    font-size: 19px;
+    border: 1px solid transparent;
+}
+.updown-button a:hover{
+    background: #F2F2F2;
+}
+.number-button a:hover{
+    background-color: #000;
+    color:#fff;
+}
+/*margin*/
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+
+
+/*fonts*/
+h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+h3{
+    font-size: 42px;
+    font-weight: 500;
+}
+h4{
+    font-size: 32px;
+}
+
+@media (max-width: 992px) {
+    h2{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 24px;
+    }
+}
+
+/*PAD 992PX*/
+@media (max-width: 992px) {
+    .container{
+        width:720px;
+        margin: 0 auto;
+        }
+    .menu ul{
+        line-height: 68px;
+        }   
+    .custom-image1{
+        background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true);
+        }
+    .custom-image2{
+        background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true);
+        }   
+    .footer{
+        padding:56px 0px 40px;
+    }
+    .footer-menu ul{
+        margin-bottom: 35px;
+    }
+    .footer-menu ul.left li{
+        margin-right: 46px;
+    }
+    .footer-menu ul.right li{
+        margin-left: 16px;
+        width: 40px;
+    }
+    .footer-menu img{
+        width:40px;
+        height: 40px;        
+    }
+    .glassitem li{
+        width: 48%;
+        margin-bottom: 40px;
+    } 
+    .sunglasses .page{
+        margin-top: 40px;
+    }
+    
+}
+/*Phone 767PX*/
+@media (max-width: 767px) {
+    .container{
+        width:372px;
+        margin: 0 auto;
+    }
+    .header .container{
+        width:100%;
+        height: 176px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
+    .header h1{
+        width: 100%;    
+        line-height: 80px;  
+    }
+    .header ul{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .header li{
+        width:50%;
+        border:1px solid #fff;
+    }
+    .header ul li a{
+        font-size: 16px;
+        line-height: 48px;
+        margin:0 auto;
+        padding:10px 50px;
+    }
+    .menu .container{
+        width:100%;
+        padding: 0;
+    }
+    .menu ul{
+        line-height: 56px;
+        }
+    .banner li{
+        height: 136px;
+        }
+    .custom-image1{
+        background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true);
+        }
+    .custom-image2{
+        background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true);
+        }   
+    
+    .footer{
+        padding:24px 0px;
+    }
+    .footer-menu ul.left{
+        display: none;
+    }    
+    .footer-menu ul.right li{
+        margin-left: 8px;
+        width:24px;
+    }   
+    .footer-menu img{
+        width:24px;
+        height: 24px;
+    }
+    .footer-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items:baseline;
+    }
+    .footer-menu ul{
+        display: flex;
+        margin-bottom: 24px;
+    }
+    .footer-info{
+        margin-bottom: 0px;   
+    }
+    .footer-info li a{
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .footer-info .material-symbols-outlined{
+        font-size: 18px;
+    }
+    .footer-words{
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-between;
+        padding-top: 16px;
+    }
+    .footer-words ul{
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-between;
+    }
+    .footer-words a{
+        margin-left: 0px;
+        font-size: 16px;
+    }
+    .sunglasses{
+        padding: 40px 0px 64px;
+    }
+    .sunglasses h4{
+        margin-bottom: 24px;
+    }
+    .glassitem{
+        gap:0px;
+    }
+    .glassitem li{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .sunglasses .page li{
+        line-height: 45px;
+    }
+    .number-button a{
+        font-size: 16px;
+    }
+    .updown-button a{
+        font-size: 16px;
+    }
+    .sunglasses .page{
+        margin-top: 40px;
+    }
+}
